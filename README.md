@@ -67,12 +67,12 @@ Everything runs on the TV. The site's domain changes often, so `Sc.kt` looks up 
 
 You need a TV with Android 9 or newer and [ADB](https://developer.android.com/tools/adb) on your computer. Turn on Developer options and network debugging on the TV first.
 
-1. Download `TVHome.apk` from the [Releases](../../releases) page, or build it yourself (see below).
+1. Build the APK yourself (see [Build from source](#build-from-source) below).
 2. Connect and install:
 
 ```bash
 adb connect <TV_IP>:5555
-adb install -r TVHome.apk
+adb install -r app-debug.apk
 adb shell pm grant dev.stek.tvhome android.permission.ACCESS_FINE_LOCATION   # needed to read the Wi-Fi name
 adb shell pm grant dev.stek.tvhome android.permission.WRITE_SECURE_SETTINGS  # lets the app keep voice search switched on
 ```
