@@ -1,0 +1,3 @@
+<searchable xmlns:android="http://schemas.android.com/apk/res/android"
+    android:label="StreamingCommunity" android:searchSuggestAuthority="dev.stek.tvhome.search"
+    android:searchSuggestIntentAction="android.intent.action.VIEW" android:includeInGlobalSearch="true"/>
